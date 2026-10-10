@@ -4,21 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторная работа №1 — Git</title>
+
+    <title>ЛР №1 — Версия 2.0</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <main class="container">
         <div class="card">
+
             <h1>Отправка данных</h1>
-            <p>Введите текст для сохранения на сервере.</p>
+            <p>Введите сообщение для сохранения на сервере.</p>
 
             <form id="sendForm">
-                <label for="message">Ваш текст</label>
+                <label for="message">Ваше сообщение</label>
+
                 <input
                     type="text"
                     id="message"
-                    placeholder="Введите сообщение..."
+                    placeholder="Введите текст..."
                     required
                 >
 
@@ -27,7 +31,39 @@
                 </button>
             </form>
 
-            <div id="result" role="status" aria-live="polite"></div>
+            <div id="result" role="status"></div>
+
+            <section class="read-section">
+                <h2>Сохранённые данные</h2>
+
+                <label for="searchQuery">
+                    Поиск по сообщениям
+                </label>
+
+                <input
+                    type="text"
+                    id="searchQuery"
+                    placeholder="Введите текст для поиска..."
+                >
+
+                <button type="button" id="readButton">
+                    Получить данные
+                </button>
+
+                <label for="savedData">
+                    Содержимое data.txt
+                </label>
+
+                <textarea
+                    id="savedData"
+                    rows="7"
+                    readonly
+                    placeholder="Здесь появятся данные с сервера"
+                ></textarea>
+
+                <div id="readStatus" role="status"></div>
+            </section>
+
         </div>
     </main>
 

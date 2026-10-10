@@ -95,3 +95,51 @@ button:disabled {
 #result.error {
     color: #dc2626;
 }
+
+.read-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+.read-section h2 {
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+
+.read-section textarea {
+    width: 100%;
+    min-height: 160px;
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    background: #f8fafc;
+    color: #334155;
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.6;
+
+    resize: vertical;
+}
+
+#readStatus {
+    font-size: 14px;
+    color: #64748b;
+}
+
+#readStatus.success {
+    color: #15803d;
+}
+
+#readStatus.error {
+    color: #dc2626;
+}
