@@ -1,6 +1,8 @@
 
-const API_URL = "http://127.0.0.1:5001";
-
+const API_URL = window.location.port === "5500"
+    ? "http://127.0.0.1:5001"
+    : "/api";
+    
 // Элементы отправки данных
 const form = document.getElementById("sendForm");
 const input = document.getElementById("message");
